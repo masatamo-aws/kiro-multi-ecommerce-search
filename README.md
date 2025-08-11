@@ -9,11 +9,11 @@
 ## スクリーンショット
 
 ### ライトモード
-![ライトモード](https://raw.githubusercontent.com/masatamo-aws/kiro-multi-ecommerce-search/main/assets/images/Light%20Mode.png)
+![ライトモード](https://raw.githubusercontent.com/masatamo-aws/kiro-multi-ecommerce-search/main/assets/image/Light%20Mode.png)
 *明るく見やすいライトテーマでの表示*
 
 ### ダークモード
-![ダークモード](https://raw.githubusercontent.com/masatamo-aws/kiro-multi-ecommerce-search/main/assets/images/Dark%20Mode.png)
+![ダークモード](https://raw.githubusercontent.com/masatamo-aws/kiro-multi-ecommerce-search/main/assets/image/Dark%20Mode.png)
 *目に優しいダークテーマでの表示*
 
 ## 主な機能
@@ -79,7 +79,7 @@ kiro-multi-ecommerce-search/
 ├── data/
 │   └── mock-data.js      # モックデータ
 ├── assets/
-│   └── images/           # スクリーンショット・画像ファイル
+│   └── image/            # スクリーンショット・画像ファイル
 │       ├── Light Mode.png # ライトモードのスクリーンショット
 │       └── Dark Mode.png  # ダークモードのスクリーンショット
 └── .env.example          # 環境変数設定例
