@@ -1,0 +1,257 @@
+/* テーマ定義 */
+
+/* ライトテーマ（デフォルト） */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-tertiary: #e9ecef;
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+    --text-muted: #adb5bd;
+    --border-color: #dee2e6;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --card-bg: #ffffff;
+    --card-border: #dee2e6;
+    --input-bg: #ffffff;
+    --input-border: #ced4da;
+    --button-primary: #0d6efd;
+    --button-primary-hover: #0b5ed7;
+    --button-secondary: #6c757d;
+    --button-secondary-hover: #5c636a;
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #0dcaf0;
+}
+
+/* ダークテーマ */
+[data-theme="dark"] {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-tertiary: #404040;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --text-muted: #808080;
+    --border-color: #404040;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --card-bg: #2d2d2d;
+    --card-border: #404040;
+    --input-bg: #404040;
+    --input-border: #555555;
+    --button-primary: #0d6efd;
+    --button-primary-hover: #0b5ed7;
+    --button-secondary: #6c757d;
+    --button-secondary-hover: #5c636a;
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #0dcaf0;
+}
+
+/* テーマ適用 */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* カード */
+.card {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+    box-shadow: 0 0.125rem 0.25rem var(--shadow);
+}
+
+.card-body {
+    color: var(--text-primary);
+}
+
+/* フォーム要素 */
+.form-control,
+.form-select {
+    background-color: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--text-primary);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--input-bg);
+    border-color: var(--button-primary);
+    color: var(--text-primary);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
+/* ボタン */
+.btn-outline-primary {
+    color: var(--button-primary);
+    border-color: var(--button-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--button-primary);
+    border-color: var(--button-primary);
+}
+
+.btn-outline-secondary {
+    color: var(--text-secondary);
+    border-color: var(--border-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--text-secondary);
+    border-color: var(--text-secondary);
+}
+
+/* モーダル */
+.modal-content {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+}
+
+.modal-header {
+    border-bottom-color: var(--border-color);
+}
+
+.modal-footer {
+    border-top-color: var(--border-color);
+}
+
+/* ナビゲーション */
+.navbar-dark {
+    background-color: var(--button-primary) !important;
+}
+
+/* バッジ */
+.badge {
+    background-color: var(--text-secondary) !important;
+}
+
+/* ページネーション */
+.pagination .page-link {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.pagination .page-link:hover {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--button-primary);
+    border-color: var(--button-primary);
+}
+
+/* テーマ切り替えボタン */
+.theme-toggle input[type="radio"] {
+    display: none;
+}
+
+.theme-toggle label {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.theme-toggle label:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
+
+.theme-toggle input[type="radio"]:checked + label {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.7) !important;
+    color: white !important;
+}
+
+/* 設定ボタン */
+.settings-button button {
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transition: all 0.3s ease;
+}
+
+.settings-button button:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.7) !important;
+    color: white !important;
+}
+
+/* スピナー */
+.spinner-border {
+    color: var(--button-primary);
+}
+
+/* テキストカラー */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+/* ボーダー */
+.border {
+    border-color: var(--border-color) !important;
+}
+
+/* 背景色 */
+.bg-light {
+    background-color: var(--bg-secondary) !important;
+}
+
+/* リスト */
+.list-group-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+/* アラート */
+.alert-info {
+    background-color: rgba(13, 202, 240, 0.1);
+    border-color: rgba(13, 202, 240, 0.2);
+    color: var(--text-primary);
+}
+
+/* ドロップダウン */
+.dropdown-menu {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dropdown-item {
+    color: var(--text-primary);
+}
+
+.dropdown-item:hover {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+/* スクロールバー（Webkit系ブラウザ） */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
