@@ -2,6 +2,24 @@
 
 すべての重要な変更がこのファイルに記録されます。
 
+## [v1.1.6] - 2025-01-08
+
+### 追加
+- **GitHubリポジトリ公開**
+  - リポジトリURL: https://github.com/masatamo-aws/kiro-multi-ecommerce-search.git
+  - 初回コミット・プッシュ完了
+  - `.gitignore` ファイル追加
+
+### 修正
+- **README.mdスクリーンショットURL更新**
+  - ローカルパスからGitHub raw URLに変更
+  - `https://raw.githubusercontent.com/masatamo-aws/kiro-multi-ecommerce-search/main/assets/images/` 形式
+
+### 改善
+- プロジェクトの公開・共有が可能
+- バージョン管理の開始
+- 協力開発の基盤整備
+
 ## [v1.1.5] - 2025-01-08
 
 ### 修正
